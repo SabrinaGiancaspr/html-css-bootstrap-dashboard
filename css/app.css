@@ -20,6 +20,7 @@ img {
 .app-toolbar {
   height: auto;
   display: flex;
+  overflow: hidden;
   flex-shrink: 0;
   align-items: center;
 }
@@ -40,6 +41,20 @@ img {
   display: flex;
 }
 
+.app-sidebar {
+  width: 70px;
+  background-color: black;
+  overflow: hidden;
+  flex-shrink: 0;
+  height: 100%;
+  background-image: url(../img/sidebar-bg.png);
+}
+
+
+.sidebar-container-bottom{
+  margin-top: auto;
+}
+
 /* media query */
 @media (min-width: 768px) {}
 
@@ -50,9 +65,6 @@ img {
 
 .debug {
   border: 1px solid red;
-  min-height: 30px;
-  width: 100%;
-  background-color: red;
 }
 
 
