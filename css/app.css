@@ -24,9 +24,14 @@ img {
   align-items: center;
 }
 
-.toolbar-content {
-  display: flex;
+.img-toolbar{
+  width: 80px;
 }
+
+.fa-magnifying-glass{
+  color: black;
+}
+
 
 /* main navbar */
 .app-content {
@@ -46,7 +51,10 @@ img {
 .debug {
   border: 1px solid red;
   min-height: 30px;
+  width: 100%;
+  background-color: red;
 }
+
 
 [class^="col"] {
   border: 1px solid red;
