@@ -5,8 +5,8 @@
   --grey: #E5E5E5;
 }
 
-img{
-  width: 100%;
+img {
+  max-width: 100%;
 }
 
 .app {
@@ -20,21 +20,20 @@ img{
 .app-toolbar {
   height: auto;
   display: flex;
-
+  flex-shrink: 0;
+  align-items: center;
 }
 
-.dashbar-container{
-  min-height: 30px;
-  background-color:var(--grey);
+.toolbar-content {
   display: flex;
+}
+
+/* main navbar */
+.app-content {
   flex-grow: 1;
+  overflow: hidden;
+  display: flex;
 }
-
-.dashbar-content{
-  color: rgba(0, 0, 0, 0.475);
-  font-weight: 500;
-}
-
 
 /* media query */
 @media (min-width: 768px) {}
@@ -44,17 +43,12 @@ img{
 
 /* debug */
 
-.debug{
+.debug {
   border: 1px solid red;
   min-height: 30px;
 }
 
 [class^="col"] {
   border: 1px solid red;
-  
-}
 
-.container {
-  border: 1px solid purple;
-  min-height: 70px;
 }
