@@ -42,7 +42,7 @@ img {
 }
 
 .app-sidebar {
-  width: 70px;
+  width: 90px;
   background-color: black;
   overflow: hidden;
   flex-shrink: 0;
@@ -56,9 +56,17 @@ img {
 }
 
 /* media query */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .app-sidebar{
+    width: 90px;
+  }
+}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .app-sidebar{
+    width: 150px;
+  }
+}
 
 
 /* debug */
