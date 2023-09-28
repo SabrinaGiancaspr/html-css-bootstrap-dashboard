@@ -16,10 +16,6 @@ img {
   flex-direction: column;
 }
 
-.container-custom{
-  width: 100%;
-}
-
 /* toolbar ricerca  */
 .app-toolbar {
   height: auto;
