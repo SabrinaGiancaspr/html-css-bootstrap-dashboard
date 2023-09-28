@@ -16,6 +16,9 @@ img {
   flex-direction: column;
 }
 
+.container-custom{
+  width: 100%;
+}
 
 /* toolbar ricerca  */
 .app-toolbar {
@@ -34,6 +37,10 @@ img {
   color: orange;
 }
 
+.tag{
+  vertical-align: super;
+  background-color: #165BBA;
+}
 
 /* navbar */
 .app-content {
@@ -61,6 +68,7 @@ img {
   overflow: hidden;
 }
 
+
 /* hero content  */
 .page-hero {
   overflow: auto;
@@ -79,6 +87,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.273);
   border-radius: 2%;
 }
+
 
 /* media query */
 @media (min-width: 768px) {
