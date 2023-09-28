@@ -20,7 +20,6 @@ img {
 /* toolbar ricerca  */
 .app-toolbar {
   height: auto;
-  overflow: hidden;
 }
 
 .img-toolbar {
@@ -50,6 +49,7 @@ img {
   flex-shrink: 0;
   height: 100%;
   background-image: url(../img/sidebar-bg.png);
+  display: flex;
 }
 
 .sidebar-container-bottom {
@@ -57,7 +57,8 @@ img {
 }
 
 .sidebar-content {
-  height: 100%;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 /* hero content  */
