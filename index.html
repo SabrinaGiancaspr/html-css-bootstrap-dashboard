@@ -74,7 +74,7 @@
         </div> <!--container-->
         <div class="container sidebar-container-bottom text-center text-light ">
           <ul class="icon-bottom list-unstyled">
-            <li>
+            <li class="hover-nav">
               <i class="fa-solid fa-gear pb-3 me-2"></i>
               <span class="d-none d-lg-inline-block">Setting</span>
             </li>
@@ -101,30 +101,37 @@
                 </div>
                 <div class="offcanvas-body">
                   <div class="input-group mb-3">
-                    <input type="text" class="form-control " placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
-                    <input type="text" class="form-control " placeholder="Cognome" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control " placeholder="Nome" aria-label="Username"
+                      aria-describedby="basic-addon1">
+                    <input type="text" class="form-control " placeholder="Cognome" aria-label="Username"
+                      aria-describedby="basic-addon1">
                   </div>
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Username"
+                      aria-describedby="basic-addon1">
                     <input type="password" id="pass" placeholder="Password" name="password" minlength="8" required />
                   </div>
                   <div class="input-group mb-3">
-                    <input type="text" class="form-control " placeholder="Indirizzo" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control " placeholder="Indirizzo" aria-label="Username"
+                      aria-describedby="basic-addon1">
                   </div>
                   <div class="input-group mb-3">
-                    <input type="text" class="form-control " placeholder="Indirizzo" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control " placeholder="Indirizzo" aria-label="Username"
+                      aria-describedby="basic-addon1">
                     <select class="form-select" id="inputGroupSelect01">
                       <option selected>STATO</option>
                       <option value="1">One</option>
                       <option value="2">Two</option>
                       <option value="3">Three</option>
                     </select>
-                    <input type="text" class="form-control " placeholder="CAP" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control " placeholder="CAP" aria-label="Username"
+                      aria-describedby="basic-addon1">
                   </div>
                   <div class="input-group">
-                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                   
+                    <input type="file" class="form-control" id="inputGroupFile04"
+                      aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+
                   </div>
                   <div class="form-check mt-3">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -162,24 +169,24 @@
                 <table class="table">
                   <thead>
                     <tr>
-                      <th colspan="5" scope="col">Prossime classi</th>
+                      <th colspan="6" scope="col">Prossime classi</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">nome</th>
+                      <th scope="row" colspan="2">nome</th>
                       <td>data</td>
                       <td>ROI</td>
                       <td>stato</td>
                       <td>azioni</td>
                     </tr>
                     <tr>
-                      <th scope="row">
+                      <th scope="row" colspan="2">
                         <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
                       </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
-                      <td>done</td>
+                      <td><span class="badge text-bg-success">Done</span></td>
                       <td>
                         <button type="button" class="btn btn-outline-secondary btn-square-md"
                           data-mdb-ripple-color="dark">
@@ -193,12 +200,12 @@
 
                     </tr>
                     <tr>
-                      <th scope="row">
+                      <th scope="row" colspan="2">
                         <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
                       </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
-                      <td>done</td>
+                      <td><span class="badge text-bg-success">Done</span></td>
                       <td>
                         <button type="button" class="btn btn-outline-secondary btn-square-md"
                           data-mdb-ripple-color="dark">
@@ -211,81 +218,91 @@
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">
+                      <th scope="row" colspan="2">
                         <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
                       </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
-                      <td>done</td>
+                      <td><span class="badge text-bg-warning text-light">process</span></td>
                       <td>
-                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
                           <i class="fa-solid fa-pen"></i>
                         </button>
-                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
                           <i class="fa-solid fa-trash"></i>
                         </button>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">
+                      <th scope="row" colspan="2">
                         <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
                       </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
-                      <td>done</td>
+                      <td><span class="badge text-bg-success">Done</span></td>
                       <td>
-                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
                           <i class="fa-solid fa-pen"></i>
                         </button>
-                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
                           <i class="fa-solid fa-trash"></i>
                         </button>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">
+                      <th scope="row" colspan="2">
                         <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
                       </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
-                      <td>done</td>
+                      <td><span class="badge text-bg-danger">failed</span></td>
                       <td>
-                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
                           <i class="fa-solid fa-pen"></i>
                         </button>
-                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
                           <i class="fa-solid fa-trash"></i>
                         </button>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">
+                      <th scope="row" colspan="2">
                         <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
                       </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
-                      <td>done</td>
+                      <td><span class="badge text-bg-success">Done</span></td>
                       <td>
-                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
                           <i class="fa-solid fa-pen"></i>
                         </button>
-                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
                           <i class="fa-solid fa-trash"></i>
                         </button>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">
+                      <th scope="row" colspan="2">
                         <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
                       </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
-                      <td>done</td>
+                      <td><span class="badge text-bg-success">Done</span></td>
                       <td>
-                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
                           <i class="fa-solid fa-pen"></i>
                         </button>
-                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
                           <i class="fa-solid fa-trash"></i>
                         </button>
                       </td>
