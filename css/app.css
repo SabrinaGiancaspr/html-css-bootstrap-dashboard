@@ -65,6 +65,11 @@ img {
 }
 
 
+.hover-nav:hover{
+  background-color: rgba(255, 255, 255, 0.253);
+}
+
+
 /* hero content  */
 .page-hero {
   overflow: auto;
@@ -74,6 +79,11 @@ img {
 .main-content {
   overflow: auto;
 } 
+
+.img-table{
+  width: 25px;
+  margin-right: 5px;
+}
 
 .bg-color{
   background-color: var(--light-blue);
@@ -90,6 +100,12 @@ img {
   .app-sidebar {
     width: 90px;
   }
+
+
+}
+
+@media (min-width: 992px){
+  
 }
 
 @media (min-width: 1200px) {

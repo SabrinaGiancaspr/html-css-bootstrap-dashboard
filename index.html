@@ -43,9 +43,9 @@
                 <i class="fa-solid fa-bell"></i>
               </span>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">profilo</a></li>
+                <li><a class="dropdown-item" href="#">fatturazione</a></li>
+                <li><a class="dropdown-item" href="#">logout</a></li>
               </ul>
             </div> <!--dropdown-->
           </div> <!--col-->
@@ -57,12 +57,28 @@
     <div class="sidebar-content d-flex">
       <nav class="app-sidebar flex-column">
         <div class="container sidebar-container text-light  text-center">
-          <div class="icon-top"><i class="fa-solid fa-house"></i> Home</div>
-          <div class="icon-top">icon</div>
-          <div class="icon-top">icon</div>
+          <ul class="icon-top list-unstyled">
+            <li class="hover-nav mt-3">
+              <i class="fa-solid fa-house me-2 mt-3 "></i>
+              <span class="d-none d-lg-inline-block">Home</span>
+            </li>
+            <li class="hover-nav mt-3">
+              <i class="fa-solid fa-moon me-2 mt-3 "></i>
+              <span class="d-none d-lg-inline-block">Stats</span>
+            </li>
+            <li class="hover-nav mt-3">
+              <i class="fa-solid fa-signal me-2  mt-3"></i>
+              <span class="d-none d-lg-inline-block">Signal</span>
+            </li>
+          </ul>
         </div> <!--container-->
-        <div class="container sidebar-container-bottom text-center">
-          <div class="icon-bottom text-light">icona</div>
+        <div class="container sidebar-container-bottom text-center text-light ">
+          <ul class="icon-bottom list-unstyled">
+            <li>
+              <i class="fa-solid fa-gear pb-3 me-2"></i>
+              <span class="d-none d-lg-inline-block">Setting</span>
+            </li>
+          </ul>
         </div> <!--container-->
       </nav>
 
@@ -77,16 +93,47 @@
                 <i class="fa-regular fa-square-plus fs-2 text-light"></i>
               </button>
 
-              <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+              <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
                 aria-labelledby="staticBackdropLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                  <h5 class="offcanvas-title" id="staticBackdropLabel">inserisci nuovo studente</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                  <div>
-                    I will not close if you click outside of me.
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control " placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control " placeholder="Cognome" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="password" id="pass" placeholder="Password" name="password" minlength="8" required />
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control " placeholder="Indirizzo" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control " placeholder="Indirizzo" aria-label="Username" aria-describedby="basic-addon1">
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>STATO</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <input type="text" class="form-control " placeholder="CAP" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group">
+                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                   
+                  </div>
+                  <div class="form-check mt-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      seleziona per proseguire
+                    </label>
+                  </div>
+                  <button type="button" class="btn btn-primary mt-2">Salva</button>
+                  <button type="button" class="btn btn-warning mt-2">Svuota</button>
                 </div>
               </div> <!--offcancvas-->
             </div> <!--col-->
@@ -95,7 +142,7 @@
               <span class="badge tag">Piano Blaze</span>
               <div class="row">
                 <div class="col">
-                  <span class="badge tag">3 app</span>
+                  <span class="badge tag">3 app <i class="fa-solid fa-angles-right"></i></span>
                   <span class="badge tag">Piano Blaze</span>
                   <span class="badge tag">Piano Blaze</span>
                   <span class="badge tag">Piano Blaze</span>
@@ -110,8 +157,8 @@
         </section> <!--hero-->
         <section class="container-fluid">
           <div class="row">
-            <div class="col-8">
-              <div class="card">
+            <div class="col-12 flex-column flex-md-row col-md-8">
+              <div class="card mt-3">
                 <table class="table">
                   <thead>
                     <tr>
@@ -127,79 +174,126 @@
                       <td>azioni</td>
                     </tr>
                     <tr>
-                      <th scope="row">classe</th>
+                      <th scope="row">
+                        <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
+                      </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
                       <td>done</td>
-                      <td>icon button</td>
+                      <td>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+
                     </tr>
                     <tr>
-                      <th scope="row">classe</th>
+                      <th scope="row">
+                        <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
+                      </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
                       <td>done</td>
-                      <td>icon button</td>
+                      <td>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md"
+                          data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">classe</th>
+                      <th scope="row">
+                        <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
+                      </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
                       <td>done</td>
-                      <td>icon button</td>
+                      <td>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">classe</th>
+                      <th scope="row">
+                        <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
+                      </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
                       <td>done</td>
-                      <td>icon button</td>
+                      <td>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">classe</th>
+                      <th scope="row">
+                        <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
+                      </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
                       <td>done</td>
-                      <td>icon button</td>
+                      <td>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">classe</th>
+                      <th scope="row">
+                        <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
+                      </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
                       <td>done</td>
-                      <td>icon button</td>
+                      <td>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">classe</th>
+                      <th scope="row">
+                        <img class="img-table" src="./img/class-avatar.jpg" alt="">classe
+                      </th>
                       <td>15 feb 2021</td>
                       <td>20%</td>
                       <td>done</td>
-                      <td>icon button</td>
+                      <td>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-square-md" data-mdb-ripple-color="dark">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div><!--card-->
-              <div class="card">
-                <div class="card-header">
-                  <h1>TO DO</h1>
-                </div>
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                    <label class="form-check-label" for="firstCheckbox">Kick nuove classi</label>
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                    <label class="form-check-label" for="secondCheckbox">Lezione bootstrap in classe</label>
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                    <label class="form-check-label" for="thirdCheckbox">controlare username github</label>
-                  </li>
-                </ul>
-              </div><!--card-->
-            </div><!--col-->
-            <div class="col-4">
-              <div class="card">
+              <div class="card mt-3">
                 <div class="card-header">
                   <h1>F.A.Q</h1>
                 </div>
@@ -245,7 +339,29 @@
                   </div> <!--accordion-item-->
                 </div><!--accordion accordion-flush-->
               </div><!--card-->
-              <div class="card mt-4">
+            </div><!--col-->
+            <div class="col-12 col-md-4">
+              <div class="card mt-3">
+                <div class="card-header">
+                  <h1>TO DO</h1>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                    <label class="form-check-label" for="firstCheckbox">Kick nuove classi</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                    <label class="form-check-label" for="secondCheckbox">Lezione bootstrap in classe</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                    <label class="form-check-label" for="thirdCheckbox">controlare username github</label>
+                  </li>
+                </ul>
+              </div><!--card-->
+
+              <div class="card mt-3">
                 <img src="./img/stats.jpeg" alt="">
 
                 <div class="">utenti attivi</div>
